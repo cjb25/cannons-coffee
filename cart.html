@@ -7,41 +7,63 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <div>
-          <img
-            src="images/cannons-coffee-logo.webp"
-            alt="Cannons Coffee, Beans of Joy! Est. 2014"
-            class="logo"
-          />
+    <header>
+      <div>
+        <img
+          src="images/logo-nav.webp"
+          alt="Cannons Coffee, Beans of Joy! Est. 2014"
+          class="logo"
+        />
 
-          <h1>Cannons Coffee</h1>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="index.html" target="_blank">Home</a></li>
-            <li><a href="cafe-latte.html" target="_blank">Coffee</a></li>
-            <li>
-              <a href="https://www.musgrove.company/" target="_blank">About</a>
-            </li>
-            <li>
-              <a href="contact.html" target="_blank">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <h2>Cart - Cannons Coffee</h2>
-      <p>Coming Soon!</p>
-      <footer>
-        <div class="footer">
-          <img
-            src="images/logo-footer.png"
-            alt="Cannons Coffee, Beans of Joy! Est. 2014"
-          />
-          <p>&copy;2024 Cannons Coffee. All Rights Reserved.</p>
-        </div>
-      </footer>
-    </div>
+        <h1>Cannons Coffee</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html" target="_blank">Home</a></li>
+          <li><a href="cafe-latte.html" target="_blank">Coffee</a></li>
+          <li>
+            <a href="https://www.musgrove.company/" target="_blank">About</a>
+          </li>
+          <li>
+            <a href="contact.html" target="_blank">Contact</a>
+          </li>
+          <li><a href="cart.html" target="_blank">Cart</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h2>Cart - Cannons Coffee</h2>
+    <p>Coming Soon!</p>
+    <form>
+      <label for="name">Name: </label>
+      <input type="text" id="name" name="name" aria-label="name" />
+
+      <label for="userEmail">Email:</label>
+      <input
+        type="text"
+        id="userEmail"
+        name="userEmail"
+        aria-label="enter email"
+        placeholder="Enter Email"
+        required
+      />
+
+      <label for="password">Password: </label>
+      <input id="password" name="password" type="text" required />
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div class="container"></div>
+    <footer>
+      <div class="footer">
+        <img
+          src="images/logo-footer.png"
+          alt="Cannons Coffee, Beans of Joy! Est. 2014"
+        />
+        <p>&copy;2024 Cannons Coffee. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/cart.js"></script>
   </body>
 </html>
