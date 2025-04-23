@@ -35,7 +35,13 @@
     <p>Coming Soon!</p>
     <form>
       <label for="name">Name: </label>
-      <input type="text" id="name" name="name" aria-label="name" />
+      <input
+        type="text"
+        id="name"
+        name="name"
+        aria-label="name"
+        placeholder="Name"
+      />
 
       <label for="userEmail">Email:</label>
       <input
@@ -43,12 +49,19 @@
         id="userEmail"
         name="userEmail"
         aria-label="enter email"
-        placeholder="Enter Email"
+        placeholder="Email"
         required
       />
 
-      <label for="password">Password: </label>
-      <input id="password" name="password" type="text" required />
+      <label for="pwd">Password:</label><br />
+      <input
+        type="password"
+        id="pwd"
+        name="pwd"
+        aria-label="enter password here"
+        placeholder="Password"
+        required
+      />
 
       <button type="submit">Submit</button>
     </form>

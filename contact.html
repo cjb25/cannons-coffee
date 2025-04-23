@@ -10,7 +10,7 @@
     <div class="wrapper">
       <header>
         <div>
-            <img
+          <img
             src="images/logo-nav.webp"
             alt="Cannons Coffee, Beans of Joy! Est. 2014"
             class="logo"
@@ -32,67 +32,68 @@
           </ul>
         </nav>
       </header>
-  
-      
+
       <h2>Contact Cannons Coffee</h2>
-      <form id ="contactForm">
+      <form id="contactForm">
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name" aria-label="name" />
 
+        <label for="userEmail">Email:</label>
+        <input
+          type="text"
+          id="userEmail"
+          name="userEmail"
+          aria-label="enter email"
+          required
+        />
 
- 
-		<label for="name">Name: </label>
-		<input type="name" id="name" name="name" aria-label="name" required />
-		
+        <label for="telNo">Phone Number: </label>
+        <input id="telNo" name="telNo" type="tel" required />
 
-      <label for="userEmail">Email:</label>
-      <input type="text" id="userEmail" name="userEmail"
-        aria-label="enter email"
-        required/>
-   
+        <label for="comments">Any Comments?</label>
+        <textarea id="comments" name="comments" rows="2" cols="40"></textarea>
 
-        
-      <label for="telNo">Phone Number: </label>
-      <input id="telNo" name="telNo" type="tel" required />
-   
-   
-
-      <label for="comments">Any Comments?</label>
-      <textarea id="comments" name="comments" rows="4" cols="40"></textarea>
-   
-    
         <label for="coffee">Coffee Flavor:</label>
         <select id="coffee" name="flavor">
-            <option value="">--Please Choose An Option --</option>
+          <option value="">--Please Choose An Option --</option>
           <option value="vanilla">Vanilla</option>
           <option value="caramel">Caramel</option>
           <option value="mocha">Mocha</option>
           <option value="cinnamon">Cinnamon</option>
-          </select>
-         
+        </select>
 
-    
+        <fieldset>
+          <legend>What Would You Like to Do?</legend>
+          <label for="buyer">Buy coffee</label>
+          <input
+            type="radio"
+            name="option"
+            id="buyer"
+            value="I want to buy coffee"
+          />
+          <label for="employment">Apply for a Job</label>
+          <input
+            type="radio"
+            name="option"
+            id="employment"
+            value="job application request"
+          />
+        </fieldset>
 
-        	<fieldset>
-		<legend>What Would You Like to Do?</legend>
-        <label for="buyer">Buy coffee</label>
-        <input type="radio" name="option" id="buyer" value="I want to buy coffee" />
-        <label for="employment">Apply for a Job</label>
-        <input type="radio" name="option" id="employment" value="job application request" /></select>
-            </fieldset>
-        
-            <button type="submit">Click to fill out the form</button>
+        <button type="submit">Click to fill out the form</button>
       </form>
       <div class="container"></div>
 
-      <footer>
-        <div class="footer">
-          <img
-            src="images/logo-footer.png"
-            alt="Cannons Coffee, Beans of Joy! Est. 2014"
-          />
-          <p>&copy;2024 Cannons Coffee. All Rights Reserved.</p>
-        </div>
-      </footer>
-    
+      <div class="footer">
+        <img
+          src="images/logo-footer.png"
+          alt="Cannons Coffee, Beans of Joy! Est. 2014"
+        />
+        <p>&copy;2024 Cannons Coffee. All Rights Reserved.</p>
+      </div>
+    </div>
+    <footer></footer>
+
     <script src="js/custom.js"></script>
   </body>
 </html>
